@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+h1 {
+    font-size: 32px;
+    color: #424242;
+    margin: 20px 0 20px 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    display: flex;
+    justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.featuredImages_wpap {
+    display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#smallImg {
+    cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.smallImages {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px double rgba(100,100,100,0.11);
+    background-color: #F0F0F0;
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smallImages img {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 3px;
+}
+.bigImage {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px double rgba(100,100,100,0.11);
+    background-color: #F0F0F0;
+    position: relative;
+}
+.bigImage img {
+    max-width: 500px;
+    max-height: 500px;
+    padding: 3px;
+}
+.backArrow img {
+    position: absolute;
+    top: 40%;
+    height: 120px;
+    width: 50px;
+    cursor: pointer;
+}
+.backArrow img:hover {
+    background-color: rgba(240,240,240,0.5);
 }
