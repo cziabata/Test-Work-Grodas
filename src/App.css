@@ -1,7 +1,7 @@
 h1 {
     font-size: 32px;
     color: #424242;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0px;
 }
 .app {
     display: flex;
@@ -13,6 +13,9 @@ h1 {
 #smallImg {
     cursor: pointer;
 }
+.smallImage {
+    position: relative;
+}
 .smallImages {
     width: 250px;
     height: 250px;
@@ -20,8 +23,17 @@ h1 {
     justify-content: center;
     align-items: center;
     border: 2px double rgba(100,100,100,0.11);
-    background-color: #F0F0F0;
-    
+    background-color: #fbfbfb;
+    position: relative;
+}
+.marginTop {
+    margin-top: 0;
+}
+.marginBottom {
+    margin-bottom: 20px;
+}
+.marginRight {
+    margin-right: 20px;
 }
 .smallImages img {
     max-width: 250px;
@@ -29,27 +41,152 @@ h1 {
     padding: 3px;
 }
 .bigImage {
-    width: 500px;
-    height: 500px;
+    width: 520px;
+    height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px double rgba(100,100,100,0.11);
-    background-color: #F0F0F0;
+    background-color: #fbfbfb;
     position: relative;
+    margin-right: 20px;
 }
 .bigImage img {
     max-width: 500px;
     max-height: 500px;
-    padding: 3px;
 }
-.backArrow img {
+.arrow img {
     position: absolute;
-    top: 40%;
     height: 120px;
     width: 50px;
     cursor: pointer;
+    top: 200px;
 }
-.backArrow img:hover {
+.arrow img:hover {
     background-color: rgba(240,240,240,0.5);
 }
+.backArrow img{
+    left: -50px;
+}
+.nextArrow img{
+    right: -50px;
+}
+.boxShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: inset 0px -75px 30px -20px rgba(0,0,0,0.5); 
+    box-shadow: inset 0px -75px 30px -20px rgba(0,0,0,0.5);
+}
+.boxShadow_small {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: inset 0px -55px 30px -15px rgba(0,0,0,0.7); 
+    box-shadow: inset 0px -55px 30px -15px rgba(0,0,0,0.7);
+}
+.imgInfo {
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+    color: #FFFFFF;
+}
+.bigImgTitle {
+    font-size: 18px;
+}
+.imgTags {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.66);
+}
+.smallImgTitle {
+    font-size: 14px;
+}
+.addToFavorite {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 1%;
+    left: 1%;
+    opacity: 0;
+}
+.bigImage:hover .addToFavorite {
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.smallImages:hover .addToFavorite {
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;   
+}
+.smallImages_flex {
+    display: flex;
+}
+.smallImgTitle_wrap {
+    max-width: 250px;
+}
+.newImgTags {
+    font-size: 12px;
+    color: #424242;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    background-color: #bebebe;
+    margin-bottom: 20px;
+}
+.tablet_wpap {
+    display: none;
+}
+.tablet_featuredImages_wrap {
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.phone_featuredImages_wrap {
+    display: none;
+}
+
+/* media queries */
+@media (max-width: 960px) {
+    .featuredImages_wpap {
+        display: none;
+    }
+    .tablet_wpap {
+        display: block;
+    }
+    .banner {
+        display: none;
+    }
+    .smallImage {
+        display: flex;
+    }
+}
+@media (max-width: 680px) {
+    h1 {
+        font-size: 24px;
+    }
+    .tablet_wpap {
+        display: none;
+    }
+    .phone_featuredImages_wrap {
+        display: block;
+    }
+    .smallImages_flex {
+        display: block;
+    }
+    .marginRight {
+        margin-right: 0;
+    }
+    .marginTop {
+        margin-top: 20px;
+    }
+}
+
