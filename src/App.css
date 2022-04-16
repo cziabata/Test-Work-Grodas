@@ -1,3 +1,4 @@
+/* COMMON STYLES */
 h1 {
     font-size: 32px;
     color: #424242;
@@ -7,6 +8,20 @@ h1 {
     display: flex;
     justify-content: center;
 }
+.cursorPointer {
+    cursor: pointer;
+}
+.marginTop {
+    margin-top: 0;
+}
+.marginBottom {
+    margin-bottom: 20px;
+}
+.marginRight {
+    margin-right: 20px;
+}
+
+/* MAIN SECTION STYLES */
 .featuredImages_wpap {
     display: flex;
 }
@@ -26,15 +41,7 @@ h1 {
     background-color: #fbfbfb;
     position: relative;
 }
-.marginTop {
-    margin-top: 0;
-}
-.marginBottom {
-    margin-bottom: 20px;
-}
-.marginRight {
-    margin-right: 20px;
-}
+
 .smallImages img {
     max-width: 250px;
     max-height: 250px;
@@ -142,6 +149,9 @@ h1 {
     background-color: #bebebe;
     margin-bottom: 20px;
 }
+
+/* MAX-WIDTH 960px STYLES */
+
 .tablet_wpap {
     display: none;
 }
@@ -150,11 +160,15 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 }
+
+/*MAX-WIDTH 680px STYLES */
+
 .phone_featuredImages_wrap {
     display: none;
 }
 
-/* media queries */
+/* MEDIA QUERIES */
+
 @media (max-width: 960px) {
     .featuredImages_wpap {
         display: none;

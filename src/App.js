@@ -13,6 +13,7 @@ function App() {
   const [response, setResponse] = useState([]);
   const [portion, setPortion] = useState(0);
   const [mainImg, setMainImg] = useState();
+  const [isFavour, setIsFavour] = useState(true)
   const spinner = "./icons/spinner.svg";
   let getData = () => {
     return JSON.parse(JSON.stringify(data));
@@ -47,18 +48,18 @@ function App() {
   const slicedHighRateImages = highRateImages.slice(0, 5);
 
   return (
-    <div className="app">
+    <main className="app">
       {
         response.length > 0 && <div> 
           <h1>FEATURED IMAGES</h1>
-          <div className="featuredImages_wpap">
+          <section className="featuredImages_wpap">
             <div className="bigImage">
               <div className="arrow backArrow" onClick={()=>{
                 if(portion === 0) {
                   setPortion(sliceArr(highRateImages).length - 1);
                 } else { setPortion(portion - 1) }
               }}><img src={back_icon} alt="back"/></div>
-              <div className="addToFavorite"><img src={regular_star_icon} alt="star"/></div>
+              <div className="addToFavorite" onClick={()=>{setIsFavour(isFavour ? false : true)}}><img src={isFavour ? solid_star_icon : regular_star_icon} alt="star"/></div>
               <img src={require(`${(mainImg ? mainImg.image: null) || highRateImages[0].image || spinner}`)} alt="main img"/>
               <div className="boxShadow"></div>
               <div className="imgInfo">
@@ -93,10 +94,10 @@ function App() {
                 } else { setPortion(portion + 1) }
               }}><img src={next_icon} alt="next"/></div>
             </div>
-          </div>
+          </section>
 
-          { /* MARKDOWN FOR 680px WIDTH START*/ }
-          <div className="tablet_wpap">
+          { /* MARKUP FOR 680px WIDTH START*/ }
+          <section className="tablet_wpap">
           <div className="tablet_featuredImages_wpap marginBottom">
             <div className="bigImage">
               <img src={require(`${slicedHighRateImages[0].image}`)} alt="main img"/>
@@ -127,13 +128,13 @@ function App() {
               )
             }
           </div>
-          </div>
+          </section>
 
-          { /* MARKDOWN FOR 680px WIDTH END*/ }
+          { /* MARKUP FOR 680px WIDTH END*/ }
 
-          {/* MARKDOWN FOR 280px WIDTH START */}
+          {/* MARKUP FOR 280px WIDTH START */}
 
-          <div className="phone_featuredImages_wrap">
+          <section className="phone_featuredImages_wrap">
             {
               slicedHighRateImages.map((item, index) => 
                 <div key={item.id} 
@@ -149,21 +150,21 @@ function App() {
                 </div>
               )
             }
-          </div>
+          </section>
             
-          {/* MARKDOWN FOR 280px WIDTH END */}
+          {/* MARKUP FOR 280px WIDTH END */}
 
-          <div>
+          <section>
             <h1>LAST IMAGES</h1>
             <div className="smallImages_flex">
               {
                 newAgeImages.map((item, index) => 
-                  <div key={item.id} >
+                  <div key={item.id} className="cursorPointer">
                     <div className={ index !== 0 ? "smallImages marginRight marginTop" : "smallImages marginRight"}>
                       <img src={require(`${item.image}`)} alt={item.title}/>
                       <div className="addToFavorite"><img src={regular_star_icon} alt="star"/></div>
                     </div>
-                    <div>
+                    <div className="smallImg_wrap">
                       <div className="smallImgTitle_wrap"><span className="smallImgTitle">{item.title}</span></div>
                       <span>{item.tags.map((tag, index)=><span key={index} className="newImgTags"><span>#{tag} </span></span>)}</span>
                     </div>
@@ -171,10 +172,10 @@ function App() {
               }
               <div className="banner"><div>BANNER</div></div>
             </div>
-          </div>
+          </section>
         </div>
       }
-    </div>
+    </main>
   );
 }
 
