@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Test-Work-Grodas/static/css/main.21585369.css",
+    "main.js": "/Test-Work-Grodas/static/js/main.8c6cf025.js",
+    "static/media/1200px-Gulf_Intracoastal_Waterway_Galveston_Bay.jpg": "/Test-Work-Grodas/static/media/1200px-Gulf_Intracoastal_Waterway_Galveston_Bay.09e1d57dbf0229a1ccab.jpg",
+    "static/media/potw1912a.jpg": "/Test-Work-Grodas/static/media/potw1912a.e981fa9bbb35ee741c0b.jpg",
+    "static/media/potw2009a.jpg": "/Test-Work-Grodas/static/media/potw2009a.3719d993ec9c2feace49.jpg",
+    "static/media/1280px-bernard_harris_and_michael_foale_prepare_to_leave_airlock_-_gpn-2006-000022.jpg": "/Test-Work-Grodas/static/media/1280px-bernard_harris_and_michael_foale_prepare_to_leave_airlock_-_gpn-2006-000022.2d97953b57941010a23e.jpg",
+    "static/media/280.png": "/Test-Work-Grodas/static/media/280.dae81fdb81868553b0a4.png",
+    "static/media/680.png": "/Test-Work-Grodas/static/media/680.8c06daf6638c63041dda.png",
+    "static/media/pia22692.jpg": "/Test-Work-Grodas/static/media/pia22692.a0039d2a3fb49f910c17.jpg",
+    "static/media/960.png": "/Test-Work-Grodas/static/media/960.8bfccd3f438d44d43085.png",
+    "static/media/49048341728_21e121889f_o.jpg": "/Test-Work-Grodas/static/media/49048341728_21e121889f_o.73410754dc6da5ff7258.jpg",
+    "static/media/EQYxPHmU0AEfdX3.jpg": "/Test-Work-Grodas/static/media/EQYxPHmU0AEfdX3.f415798a90289aeffa0c.jpg",
+    "static/media/150122-marspan1_nbcnews-fp-1200-630.jpg": "/Test-Work-Grodas/static/media/150122-marspan1_c8e503648f53129b84e1873f123c7cb0.nbcnews-fp-1200-630.e28ff0fc955fdfc4f4b8.jpg",
+    "static/media/iss061e112503.jpg": "/Test-Work-Grodas/static/media/iss061e112503.bfe5dcc5822f3d30e339.jpg",
+    "static/media/pia23408.jpg": "/Test-Work-Grodas/static/media/pia23408.42751444a2d35331d4f3.jpg",
+    "static/media/spinner.svg": "/Test-Work-Grodas/static/media/spinner.dc41c8ac0b5bea82d2f3.svg",
+    "index.html": "/Test-Work-Grodas/index.html",
+    "static/media/star-regular.svg": "/Test-Work-Grodas/static/media/star-regular.9cf9ef96b63cc2eadadf0614e3e63756.svg",
+    "static/media/next.svg": "/Test-Work-Grodas/static/media/next.37c2d659980e84cdaffa974954e36137.svg",
+    "static/media/back.svg": "/Test-Work-Grodas/static/media/back.ecc2cb9d7c2e174af2b1a7cc4c77d9bf.svg",
+    "static/media/star-solid.svg": "/Test-Work-Grodas/static/media/star-solid.904c2c594cbc811d3ed67f47085ad67f.svg",
+    "main.21585369.css.map": "/Test-Work-Grodas/static/css/main.21585369.css.map",
+    "main.8c6cf025.js.map": "/Test-Work-Grodas/static/js/main.8c6cf025.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21585369.css",
+    "static/js/main.8c6cf025.js"
+  ]
+}
